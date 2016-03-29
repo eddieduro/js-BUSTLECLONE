@@ -1,0 +1,10 @@
+
+{{!--User--}}
+<li>{{#link-to 'admin'}}Login{{/link-to}}</li>
+{{!--Posts--}}
+
+<ul>
+  {{#each model.posts as |post|}}
+    {{post-tile post=post}}
+  {{/each}}
+</ul>

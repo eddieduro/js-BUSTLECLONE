@@ -1,0 +1,6 @@
+{{log isUserLogin}}
+{{#if isUserLogin}}
+  <h2>Form</h2>
+{{else}}
+  {{admin-tile userLogin="userLogin" user=model}}
+{{/if}}

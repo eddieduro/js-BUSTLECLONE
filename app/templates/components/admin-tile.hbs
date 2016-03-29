@@ -1,0 +1,12 @@
+{{log isUserLogin}}
+{{#if isUserLogin}}
+  <h2>Form</h2>
+{{else}}
+  <form>
+    <label for="name">Username</label>
+    {{input value=username id='username'}}
+    <label for="password">Password</label>
+    {{input value=password id='password'}}
+    <button type="button" class="btn btn-primary" {{action 'userLogin' user}}>Submit</button>
+  </form>
+{{/if}}

@@ -1,0 +1,52 @@
+{
+  "posts": [{
+    "id": 1,
+    "headline": "Father wants answers from police after son shot dead" ,
+    "imageURL": "http://media.graytvinc.com/images/690*388/PIERCE+SR+PIC.jpg",
+    "datePosted": "Mar 28, 2016",
+    "content": "Pierce Jr. placed a gun to the chest of a neighbor. When officers arrived, they found him sitting on that neighbor's porch next to his gun. Then, he picked up the weapon. After police ordered him more than 40 times to drop the gun, he ran away and fired at officers. That's when they fired back. One of those shots killed him. The autopsy shows one bullet struck him through the chest also hitting his lungs and heart. His father says the video he was shown doesn't connect all the dots." ,
+    "author": "Isabel Rosales",
+    "category": "News"
+  },{
+  "id": 2,
+  "headline": "What makes absolutely 0% sense to you?",
+  "imageURL": "http://i.imgur.com/FhSHE.jpg?fb",
+  "datePosted": "Mar 28, 2016",
+  "content": "Those images on Facebook that say if you share them you'll get loads of money. Do people really believe it? How, in what world, in what circumstances, could that ever work? Is it some kind of joke that I'm not in on? 'Type Amen.' And what do deaf people hear in their head?",
+  "author": "Sir_Luke",
+  "category": "Funny"
+  },{
+  "id": 3,
+  "headline": "Netflix’s US Catalog Has Shrunk by More Than 2,500 Titles in Less Than 2.5 Years",
+  "imageURL": "https://www.allflicks.net/wp-content/uploads/2016/03/netflix-comparison.png",
+  "datePosted": "March 23, 2016" ,
+  "content": "It’s not your imagination – Netflix’s catalog is getting smaller. As competition in the OTT streaming space has increased, Netflix’s once-massive selection has decreased. In fact, it has shrunk by a third in less than two and a half years." ,
+  "author": "Stephen Lovely" ,
+  "category": "Media"
+  }],
+  "users": [{
+    "type": "Admin",
+    "id": 1,
+    "username": "SLovely",
+    "permissionLevel": 5,
+    "password": "Imsolovely"
+  },{
+    "type": "Moderator",
+    "id": 2,
+    "username": "Mort" ,
+    "permissionLevel": 3,
+    "password": "Nasalvoice"
+  },{
+    "type": "General",
+    "id": 3,
+    "username": "Gene" ,
+    "permissionLevel": 1,
+    "password": "jeans"
+  },{
+    "type": "Admin",
+    "id": 4,
+    "username": "admin",
+    "permissionLevel": 5,
+    "password": "admin"
+    }]
+}
