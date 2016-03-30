@@ -29,24 +29,28 @@
     "id": 1,
     "username": "SLovely",
     "permissionLevel": 5,
-    "password": "Imsolovely"
+    "password": "Imsolovely",
+    "isUserLoggedIn": false
   },{
     "type": "Moderator",
     "id": 2,
     "username": "Mort" ,
     "permissionLevel": 3,
-    "password": "Nasalvoice"
+    "password": "Nasalvoice",
+    "isUserLoggedIn": false
   },{
     "type": "General",
     "id": 3,
     "username": "Gene" ,
     "permissionLevel": 1,
-    "password": "jeans"
+    "password": "jeans",
+    "isUserLoggedIn": false
   },{
     "type": "Admin",
     "id": 4,
     "username": "admin",
     "permissionLevel": 5,
-    "password": "admin"
+    "password": "admin",
+    "isUserLoggedIn": false
     }]
 }

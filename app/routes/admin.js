@@ -5,11 +5,11 @@ export default Ember.Route.extend({
     return this.store.findAll('user');
   },
   actions: {
-    isUserLogin(boolean) {
-      this.set('isUserLogin', boolean);
-    },
+    // isUserLogin(boolean) {
+    //   this.set('isUserLogin', boolean);
+    // },
     userLogin(user, params){
-    
+      console.log(user);
     },
   }
 });

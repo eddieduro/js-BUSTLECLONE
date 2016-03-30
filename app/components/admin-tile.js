@@ -21,7 +21,7 @@ export default Ember.Component.extend({
       // console.log(userArray[0].username, params.username);
       userArray.forEach(function(user){
         if(user.username === params.username && user.password === params.password){
-          this.get('isUserLogin').set(this, true);
+          Ember.set(user, "isUserLogin", true);
           // this.set('isUserLogin', true);
           console.log(user);
           return false;

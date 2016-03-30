@@ -5,5 +5,6 @@ export default DS.Model.extend({
   username: DS.attr(),
   permissionLevel: DS.attr(),
   posts: DS.hasMany('post', {async:true}),
-  password: DS.attr()
+  password: DS.attr(),
+  isUserLoggedIn: DS.attr()  
 });
