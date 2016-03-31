@@ -1,9 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  isUserLogin: false,
+  isUserLoggedIn: false,
   actions: {
     userLogin(user){
+      var loggedIn = [];
       var params = {
         password: this.get('password'),
         username: this.get('username')
@@ -14,23 +15,21 @@ export default Ember.Component.extend({
       users.forEach(function(user) {
         var username = user._data.username;
         var password = user._data.password;
-        console.log(username, password);
+        // console.log(username, password);
         userArray.push({username, password});
         // console.log(user._data.username);
       });
       // console.log(userArray[0].username, params.username);
       userArray.forEach(function(user){
         if(user.username === params.username && user.password === params.password){
-          Ember.set(user, "isUserLogin", true);
+          var isLoggedIn = Ember.set(user, "isUserLoggedIn", "true");
+          loggedIn.push(Ember.get(user, "isUserLoggedIn"));
           // this.set('isUserLogin', true);
-          console.log(user);
+          // console.log(loggedIn);
           return false;
         }
       });
-      if(isUserLogin) {
-        this.transitionTo('index');
-      }
-      this.sendAction('userLogin', user ,params);
+      this.sendAction('userLogin', user ,params, loggedIn);
     },
   }
 });
