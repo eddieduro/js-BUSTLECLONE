@@ -1,7 +1,6 @@
-<!-- {{log user.isUserLogin}} -->
-{{#if isUserLogin}}
-  <h2>Form</h2>
-{{else}}
+
+{{loggedIn}}
+{{#unless loggedIn}}
   <form>
     <label for="name">Username</label>
     {{input value=username id='username'}}
@@ -9,4 +8,6 @@
     {{input value=password id='password'}}
     <button type="button" class="btn btn-primary" {{action 'userLogin' user}}>Submit</button>
   </form>
-{{/if}}
+{{else}}
+  <h2>Form</h2>
+{{/unless}}

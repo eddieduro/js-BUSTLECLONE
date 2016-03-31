@@ -9,7 +9,9 @@ export default Ember.Route.extend({
   //   //   this.set('isUserLogin', boolean);
   //   // },
     userLogin(user, params, loggedIn){
-      console.log(user, params, loggedIn);
+       var admin = Ember.Object.create({
+            loggedIn: false
+          })
       Object.keys(params).forEach(function(key){
           if(params[key]!==undefined) {
             user.set(key, params[key]);
@@ -17,8 +19,12 @@ export default Ember.Route.extend({
           }
         });
         if(loggedIn[0] === "true"){
-          this.transitionTo('index');
+          var admin = Ember.Object.create({
+            loggedIn: true
+          })
+          this.transitionTo('admin');
         }
+      // console.log(admin);
     },
     // updateLogin(loggedIn){
     // }

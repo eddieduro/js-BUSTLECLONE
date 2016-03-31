@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  isUserLoggedIn: false,
+  loggedIn: false,
   actions: {
     userLogin(user){
       var loggedIn = [];
@@ -29,6 +29,9 @@ export default Ember.Component.extend({
           return false;
         }
       });
+      if(loggedIn[0] === "true"){
+        this.set('loggedIn', true);
+      }
       this.sendAction('userLogin', user ,params, loggedIn);
     },
   }

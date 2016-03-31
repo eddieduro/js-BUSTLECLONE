@@ -1,9 +1,2 @@
+{{admin-tile userLogin="userLogin" user=model}}
 
-{{#if isUserLoggedIn}}
-  <h2>Form</h2>
-{{else}}
-{{#each model.content as |user|}}
-<!-- {{log user._data}} -->
-{{/each}}
-  {{admin-tile userLogin="userLogin" user=model}}
-{{/if}}
