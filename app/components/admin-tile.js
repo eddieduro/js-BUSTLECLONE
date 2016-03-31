@@ -31,7 +31,7 @@ export default Ember.Component.extend({
       });
       if(loggedIn[0] === "true"){
         this.set('loggedIn', true);
-      }
+      } 
       this.sendAction('userLogin', user ,params, loggedIn);
     },
   }

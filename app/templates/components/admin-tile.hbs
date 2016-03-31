@@ -1,9 +1,10 @@
 {{#unless loggedIn}}
+	<h2>Please Login to continue</h2>
   <form>
     <label for="name">Username</label>
     {{input value=username id='username'}}
     <label for="password">Password</label>
-    {{input value=password id='password'}}
+    {{input type='password' value=password id='password'}}
     <button type="button" class="btn btn-primary" {{action 'userLogin' user}}>Submit</button>
   </form>
 {{else}}
